@@ -1,0 +1,197 @@
+html, body {
+
+  font-size: 18px;
+}
+
+html * {
+
+  font-family: Roboto, sans-serif;
+}
+
+body *::selection {
+  background-color: #A81919;
+  color: #FFF;
+}
+
+footer {
+  background-color: #A81919;
+
+  height: 5px;
+}
+
+.fab {
+  margin: 10px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 32px;
+
+  text-align: center;
+
+  margin: 28px;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.main_box {
+  padding: 40px 15px;
+
+  text-align: center;
+
+
+    background-color: #1c1d26;
+
+  color: #FFF;
+}
+.main_box > h1 {
+  color: #CC3D3D;
+}
+
+/*title*/
+.main_box > h1:first-child {
+  margin-bottom: 3em;
+}
+
+.main_box#intro {
+  background-image: url('img/background_1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  color: #FFF;
+
+  text-align: center;
+
+  height: 100vh;
+
+  position: static;
+}
+
+.main_box#intro > div {
+  display: block;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main_box#intro > div > h2 {
+  font-family: Roboto, sans-serif;
+}
+
+.intro-btn-goto-project {
+  font-size: 2em;
+
+  color: #FFF;
+  border-bottom: thick solid #FFF;
+
+  text-decoration: none;
+
+  transition-duration: 0.5s
+
+}
+.intro-btn-goto-project[data-gravity=bottom] {
+
+}
+
+
+a.intro-btn-goto-project:focus,
+a.intro-btn-goto-project:hover {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom-color: #CC3D3D;
+  transition-duration: 0.4s;
+}
+a.intro-btn-goto-project:active {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom-color: #A81919;
+  transition-duration: 0.4s;
+}
+
+.navbar-menu > * {
+  color: #FFF;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+.navbar-brand:hover > * {
+  color: #FFf;
+  transition-duration: 0.4s;
+}
+.navbar-menu:hover > * {
+  color: #CC3D3D;
+  transition-duration: 0.4s;
+}
+
+.navbar-brand:active > *,
+.navbar-menu:active > * {
+  color: #A81919;
+  transition-duration: 0.2s
+}
+
+.team-profile-container {
+  display: block;
+
+  text-align: center;
+}
+.team-profile-row {
+  width:70%;
+  text-align:center;
+  margin:auto;
+}
+.team-profile-item {
+display:inline-block;
+width:25%;
+<!-- cursor: alias; -->
+float:none;
+margin-bottom:48px;
+vertical-align:top;
+}
+.team-profile-img {
+  width: 178px;
+  height: 178px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+
+}
+
+#flag {
+  width: 64px;
+  height: 64px;
+
+  background-image: url('img/flag-korea.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+
+  border-radius: 50% 50% 50% 50%;
+}
+.circle {
+  border-radius: 50% 50% 50% 50%;
+}
+.team-profile-sub {
+  text-align: center;
+}
+
+.background_1 {
+  background-image: url('img/background_1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main_box:nth-child(2n+1) {
+  background-color: #262733;
+
+  color: #FFF;
+}
+
+.background_deep_maincolor {
+  background-color: #A81919;
+}
