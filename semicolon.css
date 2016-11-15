@@ -67,6 +67,8 @@ footer {
 
 .main_box#intro {
   background-image: url('img/background_1.jpg');
+
+  -ms-background-attachment: scroll;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

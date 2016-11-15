@@ -5,7 +5,7 @@
     var language;
     if (navigator.language) {
       // 비 IE에서 작동
-      language = navigator.language
+      language = navigator.language;
     } else {
       // IE에서 작동
       $.ajax({
@@ -17,6 +17,6 @@
       });
     }
 
-    location.href = language;
+    location.href = language.split('-') [0];
   </script>
 </html>
