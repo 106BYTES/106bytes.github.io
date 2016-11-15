@@ -12,6 +12,8 @@ html, body {
 html * {
 
   font-family: Spoqa Han Sans, sans-serif;
+
+  font-style: normal;
 }
 
 body *::selection {
