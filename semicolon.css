@@ -11,7 +11,7 @@ html, body {
 
 html * {
 
-  font-family: Roboto, sans-serif;
+  font-family: Spoqa Han Sans, sans-serif;
 }
 
 body *::selection {
@@ -84,10 +84,6 @@ footer {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.main_box#intro > div > h2 {
-  font-family: Roboto, sans-serif;
 }
 
 .intro-btn-goto-project {
