@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
   <script lang="javascript">
-    location.href = "ko/"
+
+    var language;
+    if (navigator.language) {
+      // 비 IE에서 작동
+      language = navigator.language
+    } else {
+      // IE에서 작동
+      $.ajax({
+        url: "http://ajaxhttpheaders.appspot.com",
+        dataType: 'jsonp',
+        success: function(headers) {
+          language = headers['Accept-Language'];
+        }
+      });
+    }
+
+    location.href = language;
   </script>
 </html>
