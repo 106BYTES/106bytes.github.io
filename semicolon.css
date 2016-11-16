@@ -1,8 +1,4 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
-
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Ravi+Prakash);
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
 html, body {
 
@@ -11,7 +7,7 @@ html, body {
 
 html * {
 
-  font-family: Spoqa Han Sans, sans-serif;
+  font-family: Noto Sans Korean, sans-serif;
 
   font-style: normal;
 }
@@ -66,9 +62,10 @@ footer {
 }
 
 .main_box#intro {
-  background-image: url('img/background_1.jpg');
-
+  -ms-background-image: url('img/background_1.jpg');
   -ms-background-attachment: scroll;
+
+  background-image: url('img/background_1.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
