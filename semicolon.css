@@ -62,10 +62,10 @@ footer {
 }
 
 .main_box#intro {
-  -ms-background-image: url('img/background_1.jpg');
+  -ms-background-image: url('img/background_2.jpg');
   -ms-background-attachment: scroll;
 
-  background-image: url('img/background_1.jpg');
+  background-image: url('img/background_2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
