@@ -1,8 +1,8 @@
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
 html, body {
-
   font-size: 18px;
+  background-color: #0E0E0E;
 }
 
 html * {
@@ -21,6 +21,21 @@ footer {
   background-color: #A81919;
 
   height: 5px;
+}
+
+.navbar {
+  background-color: rgba(0,0,0, 0.0);
+}
+.navbar-inverse .navbar-brand {
+  color: #FFF;
+
+  transition-duration: 0.4s;
+}
+.navbar-inverse .navbar-brand :hover,
+.navbar-inverse .navbar-brand :focus {
+  color: #CC3D3D;
+
+  transition-duration: 0.4s;
 }
 
 .fab {
@@ -62,10 +77,10 @@ footer {
 }
 
 .main_box#intro {
-  -ms-background-image: url('img/background_3.png');
+  -ms-background-image: url('img/background_2.jpg');
   -ms-background-attachment: scroll;
 
-  background-image: url('img/background_3.png');
+  background-image: url('img/background_2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -77,6 +92,13 @@ footer {
   height: 100vh;
 
   position: static;
+}
+
+.main_box#intro h1 {
+  font-size: 64px;
+
+  transform: translateY(5px);
+  transition-duration: 1s;
 }
 
 .main_box#intro > div {
@@ -122,10 +144,6 @@ a.intro-btn-goto-project:active {
   padding: 5px;
   transition-duration: 0.5s;
 }
-.navbar-brand:hover > * {
-  color: #FFf;
-  transition-duration: 0.4s;
-}
 .navbar-menu:hover > * {
   color: #CC3D3D;
   transition-duration: 0.4s;
@@ -148,20 +166,28 @@ a.intro-btn-goto-project:active {
   margin:auto;
 }
 .team-profile-item {
-display:inline-block;
-width:25%;
-<!-- cursor: alias; -->
-float:none;
-margin-bottom:48px;
-vertical-align:top;
+  display:inline-block;
+  cursor: help;
+
+  width: 214px;
+
+  float:none;
+  margin:24px;
+  padding: 18px;
+
+  vertical-align:top;
+
+  border-radius: 3px;
+
+  background-color: #3A3E4A;
 }
 .team-profile-img {
   width: 178px;
   height: 178px;
 
+  border-radius: 3px;
+
   background-color: rgba(0, 0, 0, 0.3);
-
-
 }
 
 #flag {
