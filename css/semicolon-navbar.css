@@ -1,0 +1,30 @@
+.navbar {
+  background-color: rgba(0,0,0, 0.0);
+}
+.navbar-inverse .navbar-brand {
+  color: #FFF;
+
+  transition-duration: 0.4s;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #CC3D3D;
+
+  transition-duration: 0.4s;
+}
+
+.navbar-menu > * {
+  color: #FFF;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+.navbar-menu:hover > * {
+  color: #CC3D3D;
+  transition-duration: 0.4s;
+}
+
+.navbar-brand:active > *,
+.navbar-menu:active > * {
+  color: #A81919;
+  transition-duration: 0.2s
+}

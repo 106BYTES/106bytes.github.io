@@ -1,13 +1,15 @@
-@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+/*@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);*/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 html, body {
   font-size: 18px;
   background-color: #0E0E0E;
+
+  height: 100%;
 }
 
 html * {
-
-  font-family: Noto Sans Korean, sans-serif;
+  font-family: 'Spoqa Han Sans', sans-serif;
 
   font-style: normal;
 }
@@ -23,94 +25,8 @@ footer {
   height: 5px;
 }
 
-.navbar {
-  background-color: rgba(0,0,0, 0.0);
-}
-.navbar-inverse .navbar-brand {
-  color: #FFF;
-
-  transition-duration: 0.4s;
-}
-.navbar-inverse .navbar-brand :hover,
-.navbar-inverse .navbar-brand :focus {
-  color: #CC3D3D;
-
-  transition-duration: 0.4s;
-}
-
-.fab {
-  margin: 10px;
-
-  background-color: rgba(0, 0, 0, 0.2);
-
-  width: 64px;
-  height: 64px;
-
-  border-radius: 32px;
-
-  text-align: center;
-
-  margin: 28px;
-
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.main_box {
-  padding: 40px 15px;
-
-  text-align: center;
-
-
-    background-color: #1c1d26;
-
-  color: #FFF;
-}
-.main_box > h1 {
-  color: #CC3D3D;
-}
-
-/*title*/
-.main_box > h1:first-child {
-  margin-bottom: 3em;
-}
-
-.main_box#intro {
-  -ms-background-image: url('img/background_2.jpg');
-  -ms-background-attachment: scroll;
-
-  background-image: url('img/background_2.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-
-  color: #FFF;
-
-  text-align: center;
-
-  height: 100vh;
-
-  position: static;
-}
-
-.main_box#intro h1 {
-  font-size: 64px;
-
-  transform: translateY(5px);
-  transition-duration: 1s;
-}
-
-.main_box#intro > div {
-  display: block;
-
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.intro-btn-goto-project {
-  font-size: 2em;
+a.intro-btn-goto-project {
+  font-size: 1.3em;
 
   color: #FFF;
   border-bottom: thick solid #FFF;
@@ -120,11 +36,6 @@ footer {
   transition-duration: 0.5s
 
 }
-.intro-btn-goto-project[data-gravity=bottom] {
-
-}
-
-
 a.intro-btn-goto-project:focus,
 a.intro-btn-goto-project:hover {
   color: #FFF;
@@ -139,73 +50,8 @@ a.intro-btn-goto-project:active {
   transition-duration: 0.4s;
 }
 
-.navbar-menu > * {
-  color: #FFF;
-  padding: 5px;
-  transition-duration: 0.5s;
-}
-.navbar-menu:hover > * {
-  color: #CC3D3D;
-  transition-duration: 0.4s;
-}
-
-.navbar-brand:active > *,
-.navbar-menu:active > * {
-  color: #A81919;
-  transition-duration: 0.2s
-}
-
-.team-profile-container {
-  display: block;
-
-  text-align: center;
-}
-.team-profile-row {
-  width:70%;
-  text-align:center;
-  margin:auto;
-}
-.team-profile-item {
-  display:inline-block;
-  cursor: help;
-
-  width: 214px;
-
-  float:none;
-  margin:24px;
-  padding: 18px;
-
-  vertical-align:top;
-
-  border-radius: 3px;
-
-  background-color: #3A3E4A;
-}
-.team-profile-img {
-  width: 178px;
-  height: 178px;
-
-  border-radius: 3px;
-
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-#flag {
-  width: 64px;
-  height: 64px;
-
-  background-image: url('img/flag-korea.png');
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-
-  border-radius: 50% 50% 50% 50%;
-}
 .circle {
   border-radius: 50% 50% 50% 50%;
-}
-.team-profile-sub {
-  text-align: center;
 }
 
 .background_1 {

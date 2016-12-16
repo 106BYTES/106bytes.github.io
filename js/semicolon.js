@@ -21,7 +21,7 @@ $(function() {
 });
 
 $(document).ready(function(){
-  $('section#intro div[data-fadeIn="true"]').fadeIn(1000);
+  $('.main_box#intro div[data-fadeIn="true"]').fadeIn(1000);
 });
 
 $(window).scroll(function(){
