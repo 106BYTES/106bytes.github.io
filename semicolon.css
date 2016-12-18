@@ -2,10 +2,27 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 html, body {
-  font-size: 18px;
   background-color: #0E0E0E;
 
   height: 100%;
+}
+
+@media all and (min-width: 1025px) {
+  html, body {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 768px){
+  html, body {
+    font-size: 13px;
+  }
 }
 
 html * {
