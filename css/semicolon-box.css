@@ -100,6 +100,9 @@
 
   transition-duration: 0.2s;
 }
+.team-profile-teamlogoitem {
+  width: 428px;
+}
 .team-profile-item:hover {
   transform: scale(1.05);
 
