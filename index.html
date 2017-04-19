@@ -4,10 +4,10 @@
 
     var language;
     if (navigator.language) {
-      // ë¹?IE?ì„œ ?‘ë™
+      // ï¿½ï¿½?IE?ï¿½ì„œ ?ï¿½ë™
       language = navigator.language;
     } else {
-      // IE?ì„œ ?‘ë™
+      // IE?ï¿½ì„œ ?ï¿½ë™
       $.ajax({
         url: "http://ajaxhttpheaders.appspot.com",
         dataType: 'jsonp',
@@ -16,11 +16,10 @@
         }
       });
     }
-
-	if(language.equal("ko-kr")){
-		location.href = "ko"
+	if(language == "ko-KR"){
+		location.href = "ko/"
 	}else {
-		location.href = "en"
+		location.href = "en/"
 	}
   </script>
 </html>
