@@ -4,31 +4,30 @@
   text-align: center;
 
 
-    background-color: #1c1d26;
+  /*background-color: #1c1d26;*/
+  background-color: #F6F6F6;
 
-  color: #FFF;
+  color: #000;
 }
-.main_box > h1 {
-  color: #CC3D3D;
+.main_box div.content {
+  text-align: justify;
+}
+.main_box:not(#intro) h1 {
+  color: #0288d1;
 
-  font-weight: bold;
+  font-weight: 800;
+  text-decoration: underline;
 
   font-size: 2.6rem;
 }
 
 /*title*/
-.main_box > h1:first-child {
+.main_box:not(#intro) h1:first-child {
   margin-bottom: 2.8em;
 }
 
 .main_box#intro {
-  -ms-background-image: url('../img/background_2.jpg');
-  -ms-background-attachment: scroll;
-
-  background-image: url('../img/background_2.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
 
   color: #FFF;
 
@@ -39,6 +38,15 @@
 
   z-index: 1;
   position: relative;
+
+
+  -ms-background-image: url('../img/background_3.jpg');
+  -ms-background-attachment: scroll;
+
+  background-image: url('../img/background_3.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .main_box#intro::before {
@@ -71,6 +79,22 @@
 
 
 
+div.division {
+  min-height: 64px;
+  -ms-background-image: url('../img/background_3.jpg');
+  -ms-background-attachment: scroll;
+
+  background-image: url('../img/background_3.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
 .team-profile-container {
   display: block;
 
@@ -91,14 +115,20 @@
   margin:24px;
   padding: 18px;
 
+  text-align: center;
+
   vertical-align:top;
 
-  border-radius: 3px;
+  border-radius: 12px;
 
   /*background-color: #3A3E4A;*/
-  background-color: rgba(58,62,74, 0.3);
+  background-color: #01579b;
+  color: #FFF;
 
   transition-duration: 0.2s;
+}
+.team-profile-item * {
+  color: #FFF;
 }
 @media all and (min-width: 500px) {
   .team-profile-teamlogoitem {
@@ -119,7 +149,7 @@
   width: 178px;
   height: 178px;
 
-  border-radius: 3px;
+  border-radius: 50%/* 3px*/;
 
   background-color: rgba(0, 0, 0, 0.3);
 }

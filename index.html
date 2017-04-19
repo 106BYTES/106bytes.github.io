@@ -4,10 +4,10 @@
 
     var language;
     if (navigator.language) {
-      // 비 IE에서 작동
+      // �?IE?�서 ?�동
       language = navigator.language;
     } else {
-      // IE에서 작동
+      // IE?�서 ?�동
       $.ajax({
         url: "http://ajaxhttpheaders.appspot.com",
         dataType: 'jsonp',
@@ -17,6 +17,10 @@
       });
     }
 
-    location.href = language.split('-') [0];
+	if(language.equal("ko-kr")){
+		location.href = "ko"
+	}else {
+		location.href = "en"
+	}
   </script>
 </html>

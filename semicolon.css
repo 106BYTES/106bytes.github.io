@@ -2,14 +2,32 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
 html, body {
-  background-color: #0E0E0E;
+  /* background-color: #0E0E0E; */
+
 
   height: 100%;
 }
 
+body {
+  /*background-image: url("../img/background_3.jpg");왜 안될까...?*/ 
+}
+
+.c {
+  text-align: center;
+}
+.j {
+  text-align: justify;
+}
+.l {
+  text-align: left;
+}
+.r {
+  text-align: right;
+}
+
 @media all and (min-width: 1025px) {
   html, body {
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
@@ -32,14 +50,18 @@ html * {
 }
 
 body *::selection {
-  background-color: #A81919;
-  color: #FFF;
+  background-color: #b3e5fc;
+  color: #000;
 }
 
 footer {
-  background-color: #A81919;
+  background-color: #03a9f4;
 
-  height: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer * {
+  color: #FFF;
 }
 
 a.intro-btn-goto-project {
@@ -57,13 +79,13 @@ a.intro-btn-goto-project:focus,
 a.intro-btn-goto-project:hover {
   color: #FFF;
   text-decoration: none;
-  border-bottom-color: #CC3D3D;
+  border-bottom-color: #03a9f4;
   transition-duration: 0.4s;
 }
 a.intro-btn-goto-project:active {
   color: #FFF;
   text-decoration: none;
-  border-bottom-color: #A81919;
+  border-bottom-color: #01579b;
   transition-duration: 0.4s;
 }
 
@@ -77,12 +99,12 @@ a.intro-btn-goto-project:active {
   background-attachment: fixed;
   background-position: center;
 }
-
+/*
 .main_box:nth-child(2n+1) {
   background-color: #262733;
 
   color: #FFF;
-}
+}*/
 
 .background_deep_maincolor {
   background-color: #A81919;
